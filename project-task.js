@@ -72,7 +72,7 @@ const todos = [
   // ============================================
   
   console.log("Incomplete Tasks:", todos.filter((todo) => !todo.completed));
-  console.log("Sorted by Priority:", todos.slice().sort((a,b) => a.priority - b.priority));
+  console.log("Sorted by Priority:", todos.sort((a,b) => a.priority - b.priority));
   console.log("All Tasks Completed:", todos.map((todo) => ({...todo, completed: true })));
-  console.log("Sorted Incomplete Tasks:", todos.filter((todo) => !todo.completed).slice().sort((a,b) => a.priority - b.priority));
+  console.log("Sorted Incomplete Tasks:", todos.filter((todo) => !todo.completed).sort((a,b) => a.priority - b.priority));
   
